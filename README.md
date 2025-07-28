@@ -50,6 +50,8 @@ Visit http://127.0.0.1:8000/ in your browser.
 
 
 To use a different database, update the DATABASES section in settings.py
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
