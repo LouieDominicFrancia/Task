@@ -1,7 +1,6 @@
 # 📝 Task Manager Web App (Django)
 
-This is a simple Task Manager web application built with **Django**. It allows users to add, update, delete, and filter tasks based on status, priority, and due date. All data is stored in a **relational database** (SQLite by default) and is persisted between sessions.
-
+This is a simple Task Manager web application built with **Django**. It allows users to add, update, delete, and filter tasks based on status, priority, and due date.
 ---
 
 ## 🚀 Features
@@ -14,9 +13,37 @@ This is a simple Task Manager web application built with **Django**. It allows u
 
 ---
 
-### 1. Clone the repository
+1. Clone the repository
 
-```bash
 git clone https://github.com/your-username/task-manager.git
 cd task-manager
 
+2. Create and activate a virtual environment
+python -m venv env
+source env/bin/activate       # On Linux/macOS
+env\Scripts\activate          # On Windows
+
+3. Install dependencies
+pip install -r requirements.txt
+
+4. Apply database migrations
+python manage.py migrate
+
+5. Run the development server
+python manage.py runserver
+
+Visit http://127.0.0.1:8000/ in your browser.
+
+
+
+To use a different database, update the DATABASES section in settings.py
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'task_db',
+        'USER': 'root',
+        'PASSWORD': 'admin',
+        'HOST': 'localhost',
+        'PORT': '3306',
+    }
+}
