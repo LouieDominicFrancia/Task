@@ -14,3 +14,9 @@ This is a simple Task Manager web application built with **Django**. It allows u
 
 ---
 
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/task-manager.git
+cd task-manager
+
