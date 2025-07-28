@@ -15,22 +15,35 @@ This is a simple Task Manager web application built with **Django**. It allows u
 
 1. Clone the repository
 
+
 git clone https://github.com/your-username/task-manager.git
 cd task-manager
 
 2. Create and activate a virtual environment
+
+   
 python -m venv env
 source env/bin/activate       # On Linux/macOS
 env\Scripts\activate          # On Windows
 
 3. Install dependencies
+
+
 pip install -r requirements.txt
 
 4. Apply database migrations
+
+
 python manage.py migrate
 
 5. Run the development server
+
+
 python manage.py runserver
+
+
+
+
 
 Visit http://127.0.0.1:8000/ in your browser.
 
